@@ -13,7 +13,7 @@ namespace Cds.DroidManagement.Domain.DroidAggregate
             SerialNumber = serialNumber;
         }
 
-        internal static Arm CreateNew()
+        public static Arm CreateNew()
         {
             return new Arm(Guid.NewGuid());
         }

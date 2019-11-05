@@ -29,7 +29,7 @@ namespace Cds.DroidManagement.Domain.DroidAggregate
             CreatedOn = createdOn;
         }
 
-        internal static async Task<Droid> CreateNewAsync(
+        public static async Task<Droid> CreateNewAsync(
             Func<DroidName, Task<bool>> nameAlreadyExists,
             Func<Task<string>> getRandomQuoteAsync,
             Func<string, string> encrypt,
@@ -42,10 +42,10 @@ namespace Cds.DroidManagement.Domain.DroidAggregate
             return await droid.SetNameAsync(nameAlreadyExists, createDroid.Name);
         }
 
-        internal Task<Droid> UpdateAsync(Func<DroidName, Task<bool>> nameAlreadyExistsAsync, UpdateDroid updateDroid)
+        public Task<Droid> UpdateAsync(Func<DroidName, Task<bool>> nameAlreadyExistsAsync, UpdateDroid updateDroid)
             => SetNickname(updateDroid.Nickname).SetNameAsync(nameAlreadyExistsAsync, updateDroid.Name);
 
-        internal Arm AddArm()
+        public Arm AddArm()
         {
             AssertLimitOfArmsNotReached(Arms.Count);
 
@@ -85,7 +85,7 @@ namespace Cds.DroidManagement.Domain.DroidAggregate
         }
 
         // Reload domain from database
-        internal static Droid FromDto(IDroidDto droidDto)
+        public static Droid FromDto(IDroidDto droidDto)
         {
             if (droidDto == null)
             {
@@ -100,7 +100,7 @@ namespace Cds.DroidManagement.Domain.DroidAggregate
             };
         }
 
-        internal Droid WithArms(IEnumerable<IArmDto> armDtoList)
+        public Droid WithArms(IEnumerable<IArmDto> armDtoList)
         {
             _arms = armDtoList.Select(Arm.FromDto).ToList();
             return this;
