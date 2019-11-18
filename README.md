@@ -1,6 +1,6 @@
 # .NetCore challenge by Cdiscount
 
-## Résultats: le challenge est clôturé et les gagnants identifiés ! 🎉
+## Résultats : le challenge est clôturé et les gagnants identifiés ! 🎉
 
 <p align="center">
     <img src="docs/trophy.svg" />
@@ -12,15 +12,15 @@
 2. Isabelle Lucas
 3. Yannick Gardiol
 
-Félicitations à tous les trois, nous vous contacterons sous peu pour vous remettre vos bons d’achat et votre place à l’Agile Day by Cdiscount !
+Félicitations à tous les trois, nous vous contacterons sous peu pour vous remettre vos bons d'achat et votre place à l'[Agile Day by Cdiscount](https://www.agiledaybycdiscount.com/) !
 
 Un grand bravo également à tous. Merci pour votre participation et vos belles performances. Nous reviendrons vers vous par mail pour vous annoncer vos résultats.
 
-A bientôt pour de nouveaux défis ! 👋
+À bientôt pour de nouveaux défis ! 👋
 
 [Suivez-nous sur LinkedIn](https://www.linkedin.com/company/cdiscount/) et [notre blog technique](https://techblog.cdiscount.com/).
 
-## Le challenge
+## Le challenge : terminé depuis le `08/11/2019`
 
 ### Le but ?
 
@@ -29,7 +29,7 @@ Qui sait ? C'est peut-être également l'occasion de te faire repérer.
 
 ### La solution `Cds.DroidManagement`
 
-La solution est en AspNet Core 2.1 et a été créé avec visual studio 2017
+La solution est en AspNet Core 2.1 et a été créé avec visual studio 2017.
 C'est une Api de gestion de Droid utilisant les patrons de conception :
 
 - DDD (Domain Driven Design)
@@ -37,10 +37,10 @@ C'est une Api de gestion de Droid utilisant les patrons de conception :
 
 ### Pour participer
 
-- Cloner le dépot en local
-- Le projet compile mais 6 tests sont en échec
-- Compléter les implémentations dans les classes `ArmsController` et `SqlServerArmRepository`
-- Aidé des tests en échec, valider les modifications
-- Prendre soin de la qualité du code, une note sera attribuée par les analyseurs de code
-- Naviguer vers https://dotnetcorechallenge.francecentral.cloudapp.azure.com/
-- Renseigner vos informations personnelles et le code des deux classes modifiées
+- Cloner le dépot en local ;
+- Le projet compile mais 6 tests sont en échec ;
+- Compléter les implémentations dans les classes `ArmsController` et `SqlServerArmRepository` ;
+- Aidé des tests en échec, valider les modifications ;
+- Prendre soin de la qualité du code, une note sera attribuée par les analyseurs de code ;
+- Naviguer vers https://dotnetcorechallenge.francecentral.cloudapp.azure.com/ ;
+- Renseigner vos informations personnelles et le code des deux classes modifiées.
